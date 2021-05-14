@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MileStone Assignment</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Club Member Registration Portal</h1>
+    </header>
+    <div class="container">
+
+        <div class="form-container">
+            <form>
+                <span>Enter Your Details Here</span>
+                <input type="text" id="fname" placeholder="Enter First Name" />
+                <input type="text" id="sname" placeholder="Enter Surname" />
+                <input type="text" id="age" placeholder="Enter Age" />
+                <select name="" id="level">
+                    <optgroup label="Choose Current Level">
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Expert">Expert</option>
+                </select>
+                <input type="text" id="fclub" placeholder="Enter Favorite Club" />
+                <div class="formBox">
+                    <button id="btnSave" onclick="AddDatatoJson(event)">Save</button>
+                    <button id="btnEdit" onclick="DeleteRow() ">Delete</button>
+                </div>
+            </form>
+        </div>
+        <div id="container" style="width:700px;"></div>
+        <div class="overlay-panel overlay-right">
+            <h1>Hello, New Club Member!</h1>
+            <p>Check your name in the table display below after clicking on the save button </p>
+        </div>
+    </div>
+    <div>
+        <table id="table">
+            <tr>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Surname</th>
+                <th>Age</th>
+                <th>Current Level</th>
+                <th>Favorite Club</th>
+            </tr>
+
+        </table>
+    </div>
+    <!-- <div class="footer">
+        <p>This application is designed by JoshyTECH</p>
+    </div> -->
+    <script src="index.js"></script>
+</body>
+
+</html>
